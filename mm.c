@@ -5,8 +5,6 @@
  *  in a more efficient manner. A footerless implementation for allocated
  * blocks and mini block for blocks of 16 bytes to improve utilization.
  *
- * 18-213: Introduction to Computer Systems
- *
  * This file uses segregated list to implement dynamic memory allocator,
  * the allocator uses first-fit search method and the free block lists
  * use FIFO insertion policy.
@@ -45,8 +43,6 @@
 #include "memlib.h"
 #include "mm.h"
 
-/* Do not change the following! */
-
 #ifdef DRIVER
 /* create aliases for driver tests */
 #define malloc mm_malloc
@@ -56,8 +52,6 @@
 #define memset mem_memset
 #define memcpy mem_memcpy
 #endif /* def DRIVER */
-
-/* You can change anything from here onward */
 
 /*
  *****************************************************************************
@@ -211,13 +205,6 @@ static block_t *free_mini;
  *****************************************************************************
  * The functions below are short wrapper functions to perform                *
  * bit manipulation, pointer arithmetic, and other helper operations.        *
- *                                                                           *
- * We've given you the function header comments for the functions below      *
- * to help you understand how this baseline code works.                      *
- *                                                                           *
- * Note that these function header comments are short since the functions    *
- * they are describing are short as well; you will need to provide           *
- * adequate details for the functions that you write yourself!               *
  *****************************************************************************
  */
 
